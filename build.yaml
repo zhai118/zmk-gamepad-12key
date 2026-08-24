@@ -1,0 +1,9 @@
+---
+include:
+  - github:zmkfirmware/zmk//.github/workflows/build-user-config.yml
+
+build:
+  targets:
+    - board: nrfmicro_13_52840//zmk
+      shield: gamepad_12key
+      artifact-name: gamepad-12key
