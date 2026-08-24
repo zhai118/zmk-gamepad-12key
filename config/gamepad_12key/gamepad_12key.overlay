@@ -1,0 +1,20 @@
+/ {
+    gpio_keymap {
+        compatible = "zmk,gpio-keymap";
+        status = "okay";
+        keys {
+            key_w: key_0  { gpios = <&gpio0 2  GPIO_ACTIVE_LOW>; };
+            key_a: key_1  { gpios = <&gpio0 3  GPIO_ACTIVE_LOW>; };
+            key_s: key_2  { gpios = <&gpio0 4  GPIO_ACTIVE_LOW>; };
+            key_d: key_3  { gpios = <&gpio0 5  GPIO_ACTIVE_LOW>; };
+            key_spc:key_4 { gpios = <&gpio0 6  GPIO_ACTIVE_LOW>; };
+            key_f: key_5  { gpios = <&gpio0 7  GPIO_ACTIVE_LOW>; };
+            key_e: key_6  { gpios = <&gpio0 8  GPIO_ACTIVE_LOW>; };
+            key_up: key_7 { gpios = <&gpio0 9  GPIO_ACTIVE_LOW>; };
+            key_down:key_8{ gpios = <&gpio0 10 GPIO_ACTIVE_LOW>; };
+            key_r: key_9  { gpios = <&gpio0 11 GPIO_ACTIVE_LOW>; };
+            key_alt:key_10{ gpios = <&gpio0 12 GPIO_ACTIVE_LOW>; };
+            key_tab:key_11{ gpios = <&gpio0 13 GPIO_ACTIVE_LOW>; };
+        };
+    };
+};
