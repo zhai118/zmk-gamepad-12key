@@ -1,0 +1,13 @@
+cat > /workspaces/zmk-gamepad-12key/west.yml << 'EOF'
+manifest:
+  remotes:
+    - name: zmkfirmware
+      url-base: https://github.com/zmkfirmware
+  projects:
+    - name: zmk
+      remote: zmkfirmware
+      revision: main
+      import: app/west.yml
+  self:
+    path: config
+EOF
